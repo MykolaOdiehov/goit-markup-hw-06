@@ -2,6 +2,7 @@ body {
 font-family: Roboto, sans-serif;
 color: #212121;
 font-style: normal;
+
 }
 
 button {
@@ -43,14 +44,11 @@ flex-direction: column;
 height: 16px;
 }
 .list-in-header:hover{
-fill: #2196f3 ;
-
-
+fill: #2196f3;
 }
-.list-in-header > a:hover{color:#2196f3 ;
+.list-in-header:hover > a{
+color:#2196f3;
 }
-
-
 .container {
 width: 1200px;
 margin: 0 auto;
@@ -633,28 +631,46 @@ border-radius: 4px;
 opacity: 0;
 pointer-events: none;
 visibility: hidden;
+transition: 250ms;
 }
 .kerstic{
+height: 18px;
+width: 18px;
+position: absolute;
 top: 8px;
-right:8px;
-border-radius: 360px;
-margin-left: 498px;
+right: 8px;
+background: #FFFFFF;
+
+}
+.kerstic:hover{
+fill: #3DA3F5;
 }
 .backdrop{
+position: fixed;
+top: 0px;
+left: 0px;
 width: 100%;
 height: 100%;
 background: rgba(0, 0, 0, 0.2);
+transition: 250ms;
 }
 .form-in-modal{
-
+padding: 12px 40px ;
 }
 .input-in-footer{
-width: 448px;
+width: 100%;
 height: 40px;
-border: 1px solid rgba(33, 33, 33, 0.2);
 box-sizing: border-box;
 border-radius: 4px;
+text-indent: 35px;
+border: 1px solid rgba(33, 33, 33, 11);
+box-sizing: border-box;
+border-radius: 4px;
+font-family: Roboto;
+
 }
+
+
 .h3-in-modal{
 font-family: Roboto;
 font-style: normal;
@@ -678,10 +694,23 @@ padding-bottom: 4px;
 }
 .div-in-form-modal{
 padding-bottom: 10px;
-margin-left: 40px;
+
+}
+.div-in-form-modal:hover {
+fill: blue;
+
+}
+.div-in-form-modal:hover > input {
+border:1px solid blue;
+outline: none;
 }
 .coment-in-modal{
 height: 120px;
+resize: none;
+font-family: Roboto;
+width: 100%;
+box-sizing: border-box;
+border-radius: 4px;
 }
 .checkbox-in-modal{
 display: flex;
@@ -700,10 +729,134 @@ margin:auto 0;
 }
 
 .buttom-in-form:hover{
-  background: #188CE8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+background: #188CE8;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 }
 .buttom{
-  margin-left: 165px;
+margin-left: 165px;
+padding: 0px 0px 40px 0px; 
+
+}
+.buttom-in-form > p{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 30px;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+}
+.svg-photo-in-form{
+height: 18px;
+width: 18px;
+position: absolute;
+margin: 12px 11px;
+}
+.border-input-and-svg{
+border: 1px solid rgba(33, 33, 33, 0.2);
+width: 448px;
+border-radius: 4px;
+height: 40px;
+}
+.input{
+width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+}
+.box-for-krestik{
+
+border: 1px solid rgba(0, 0, 0, 0.1);
+
+height: 30px;
+width: 30px;
+}
+.form-in-modal-box{
+padding: 40px 0px;
+}
+.kerstic-box{
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 360px;
+width: 30px;
+height: 30px;
+margin-left: auto;
+}
+.input-in-footer:not(:placeholder-shown):invalid {
+border: 1px solid red;
+
+}
+.input-in-footer:not(:placeholder-shown):invalid .div-in-form-modal   {
+
+fill: red; 
+
+}
+ .input-in-footer:not(:placeholder-shown):valid{
+border: 1px solid blue++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++;
+}
+.text-for-input-in-footor{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+padding-bottom: 20px;
+padding-top: 15px;
+}
+.input-for-subscribing{
+width: 358px;
+height: 50px;
+outline: none;
+background-color:rgba(255, 255, 255, 0.0);
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+border-radius: 4px;
+color: #FFFFFF;
+text-indent: 35px;
+}
+.div-for-input-for-subscribing{
+padding-left: 47px;
+}
+.button-for-subscrib{
+display: inline;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+width: 200px;
+height: 49px;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+
+margin-left:12px;
+}
+.svg-photo-for-subcrib{
+width: 24px;
+height: 24px;
+margin-left:10px;
+margin-top: 0px;
+display: inline;
+}
+.text-for-subscrib{
+display: inline;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 30px;
+
+
+letter-spacing: 0.06em;
+
+color: #FFFFFF;
+
 }

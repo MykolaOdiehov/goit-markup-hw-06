@@ -436,47 +436,66 @@
              </li>
            </ul>
           </div>
+          <div>
+          <form>
+            <div class="div-for-input-for-subscribing">
+              <p class="text-for-input-in-footor">Подпишитесь на рассылку</p>
+              <div class="d1">
+              <input type="email" placeholder="E-mail"  class="input-for-subscribing">
+              <button class="button-for-subscrib"><p class="text-for-subscrib">Подписаться</p> <svg class="svg-photo-for-subcrib">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-telegram"></use></svg> 
+              </button>
+            </div>
+            </div>
+          </div>
+           </form>
         </div>
+        
         </div>
     </footer>
-    <section   class="backdrop  is-hidden" data-modal >
+    <div   class="backdrop  is-hidden" data-modal >
 <div class="modal">
-    
-<button class="kerstic" data-modal-close><img class="kerstovi-posod" src="./images/close (1).svg" alt=""></button>
+ <div class="kerstic-box">
+  <svg class="kerstic"  data-modal-close> <use  href="./images/icons.svg/symbol-defs.svg#icon-close-black-18dp-2-1"></use> </svg>
+</div>
+  <div class="form-in-modal-box">
 <h3 class="h3-in-modal">Оставьте свои данные, мы вам перезвоним</h3>
 <form class="form-in-modal" action="">
  <div class="div-in-form-modal">
    <h3 class="h3-in-modal"></h3>
    <p class="p-in-modal">Имя</p>
-   <input type="text" class="input-in-footer">
+   <svg class="svg-photo-in-form"> <use href="./images/icons.svg/symbol-defs.svg#icon-person-black-18dp-1"></use> </svg>
+   <input type="text" class="input-in-footer" minlength="2" maxlength="50">
  </div>
  <div class="div-in-form-modal">
    <p class="p-in-modal">Телефон</p>
-   <input type="text" class="input-in-footer">
- </div>
+   <svg class="svg-photo-in-form"> <use class="svg-in-input" href="./images/icons.svg/symbol-defs.svg#icon-phone-black-18dp-1"></use> </svg>
+   <input type="text" class="input-in-footer"  title="38-050-050-55-55" pattern="[0-9]{3}-[0-9]-[0-9]{2}">
+  </div>
  <div class="div-in-form-modal">
    <p class="p-in-modal">Почта</p>
+   <svg class="svg-photo-in-form"> <use href="./images/icons.svg/symbol-defs.svg#icon-email-black-18dp-1"></use> </svg>
    <input type="text" class="input-in-footer">
  </div>
  <div class="div-in-form-modal">
    <p class="p-in-modal">Комментарий</p>
-   <input type="text" class="input-in-footer coment-in-modal">
+   <textarea placeholder="Введите текст" class="coment-in-modal"></textarea>
  </div>
  <div class="checkbox-in-modal">
-   <input type="checkbox">
+   <input type="checkbox" checked>
 <p>Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a></p>
 
  </div>
  <div class="buttom">
- <button class="buttom-in-form">Отправить</button>
+ <button type="submit" class="buttom-in-form"> <p> Отправить</p></button>
 </div>
 </form>
 </div>
+</div>
 
 
 
-
-    </section>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
