@@ -743,7 +743,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 }
 .buttom{
-margin-left: 165px;
+margin-left: 125px;
 padding: 0px 0px 40px 0px; 
 
 }
@@ -762,7 +762,7 @@ color: #FFFFFF;
 height: 18px;
 width: 18px;
 position: absolute;
-margin: 12px -495px;
+margin: 12px -430px;
 }
 .border-input-and-svg{
 border: 1px solid rgba(33, 33, 33, 0.2);
