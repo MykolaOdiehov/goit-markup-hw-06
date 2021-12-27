@@ -716,6 +716,8 @@ font-family: Roboto;
 width: 100%;
 box-sizing: border-box;
 border-radius: 4px;
+padding-top: 12px;
+padding-left: 16px;
 }
 .checkbox-in-modal{
 display: flex;
@@ -874,4 +876,32 @@ line-height: 24px;
 letter-spacing: 0.03em;
 color: #757575;
  padding-bottom:30px ;
+ 
+ 
  }
+
+.icon{
+    border: 2px solid #2a2a2a;
+    width: 16px;
+    height: 15px;
+ border-radius: 4px;
+ }
+ .input:checked+.icon{
+    width: 16px;
+    height: 15px;
+ border-color:blue ;
+
+    background-color: blue;
+ }
+ .svg-photo-in-form-labal{
+    margin: auto auto;
+    height: 16px;
+    width: 15px;
+   
+ }
+.input{
+    appearance: none;
+    position:absolute;
+    border: none;
+ }
+ 
